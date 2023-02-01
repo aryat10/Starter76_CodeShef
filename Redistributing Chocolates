@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void dis(int x,int y,int z){
+    int s = x+y+z;
+    int d = s/3;
+    if(d!=1){
+        cout << "YES" << endl;
+    }
+    else {
+        cout << "NO" << endl;
+    }
+}
+
+int main() {
+	int t;
+	cin >> t;
+	while(t--){
+	    int x,y,z;
+	    cin >>x>>y>>z;
+	    dis(x,y,z);
+	}
+	return 0;
+}
