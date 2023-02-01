@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void str(string s,int n){
+    int numz = 0;
+    int numx = 0;
+    for(int i=0;i<n;i++){
+        if(s[i]=='0')
+        numz++;
+        else
+        numx++;
+    }
+    if(numx==0){
+        cout << 0 << endl;
+    }
+    else if(numz==0){
+        cout << 1 << endl;
+    }
+    else if (numx>numz){
+        cout << numz+1 << endl;
+    }
+    else{
+        cout << numx << endl;
+    }
+}
+
+
+int main() {
+	int t;
+	cin >> t;
+	while(t--){
+	    int n;
+	    cin >> n;
+	    string s;
+	    cin >> s;
+	    str(s,n);
+	}
+	return 0;
+}
